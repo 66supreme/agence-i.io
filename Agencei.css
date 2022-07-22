@@ -1,0 +1,165 @@
+﻿
+    @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h3 {
+    font-size: 44px;
+    line-height: 55px;
+    color: #121212;
+    font-weight: 600;
+}
+
+h6 {
+    font-size: 20px;
+    line-height: 32px;
+    color: #6c6c6c;
+    font-weight: normal;
+    margin-top: 16px;
+}
+
+.main-btn {
+    display: inline-block;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 2px solid transparent;
+    padding: 0 32px;
+    font-size: 16px;
+    line-height: 48px;
+    color: #0067f4;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.4s ease-out 0s;
+    z-index: 5;
+}
+
+
+
+
+/************Nav**********/
+
+.logo img {
+    width: 75px;
+    margin-left: 10px;
+}
+
+.nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 6.5rem;
+    background: transparent;
+    transition: all 0.5s ease;
+    z-index: 100000;
+}
+
+
+    .nav.scrolled {
+        background-color: #fff !important;
+        transition: background-color 200ms linear;
+        box-shadow: 7px 10px 15px rgba(0,0,0,0.3);
+    }
+
+
+    .nav .navbar-toggler {
+        display: none;
+        border: none;
+        outline: none;
+    }
+
+
+        .nav .navbar-toggler .toggler-icon {
+            width: 27px;
+            height: 3px;
+            background-color: #121212;
+            margin: 5px 0;
+            position: relative;
+            display: block;
+            transition: all 0.3s ease-out 0s;
+        }
+
+    .nav .menu-bar .menu-items {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .nav .menu-bar .menu-items li {
+            margin: 0 15px;
+        }
+
+    .nav .menu-bar .menu-item li a {
+        color: #000;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+        .nav .menu-bar .menu-item li a:hover {
+            color: #4F47E4;
+        }
+
+    .nav .navbar-social {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .nav .navbar-social span {
+            font-size: 18px;
+            font-weight: 600;
+            padding-right: 10px;
+            color: #6c6c6c;
+        }
+
+        .nav .navbar-social ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+            .nav .navbar-social ul li a {
+                color: #6c6c6c;
+                font-size: 22px;
+            }
+
+/**********accueil********/
+
+.back {
+    background-image: url("image/agenceicouv.jpeg");
+    width: 100%;
+    height: 120vh;
+    background-size: cover;
+}
+
+    .back .overlay {
+        background-image: linear-gradient(rgba(232,237,255,0.9) 40%, rgba(254,255,244,0.3) 70%, rgba(255,255,255,0.12));
+        width: 100%;
+        height: 100%;
+        opacity: 0.5;
+    }
