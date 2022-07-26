@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    }
+body{
+    max-width: translateY(100%);
+    margin: auto;
+    justify-content: center;
+
+}
+form{
+    border-radius: 50px;
+    border: 2px solid rgba(181, 184, 179, 0.527);
+    width: 500px;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+    margin-top: 100px;
+    
+}
+.form{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    padding: 10px;
+}
+.title-form{
+    display:inline-block;
+    position:absolute;
+}
+.title-form::after{
+    content:'';
+    height:3px;
+    width:43%;
+    background:#252424;
+    position:absolute;
+    left:calc(50% - 50%);
+    bottom:-5px;
+}
+.rounded-pill{
+    border-radius: 15px;
+}
