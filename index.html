@@ -37,8 +37,13 @@
  //=======
 
  //=====Ajout du message au format HTML          
+<<<<<<< HEAD:index.html
  $contenu = 'Bonjour  $nom ,
   Nous avons bien recu votre message. Nous vous repondrons d\'ici peu ';
+=======
+ $contenu = '<p>Bonjour ' . $nom . ',</p><br>
+   	<p>Nous avons bien recu votre message. Nous vous repondrons d\'ici peu </p>';
+>>>>>>> 55216b2f34788496b285f82bcb032806e8124b05:index.php
 
  mail($mail, 'Accuse de reception', $contenu, $header);
  header('Location: index.php');
