@@ -25,6 +25,7 @@ form{
     padding: 10px;
     margin: auto;
     padding: 10px;
+    top: 100px;
 }
 .title-form{
     display:inline-block;
@@ -41,4 +42,147 @@ form{
 }
 .rounded-pill{
     border-radius: 15px;
+}
+
+/* style Partie realisations*/
+.realisation{
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    padding: 10px;
+    top: 100px;
+}
+.realisation-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: -30px;
+}
+.realisation-box::after{
+    content:'';
+    height:4px;
+    width:43%;
+    background:#252424;
+    position:absolute;
+    left:calc(80% - 50%);
+    bottom:-5px;
+}
+.realisation-box::before{
+    content:'';
+    height:4px;
+    width:43%;
+    background:#252424;
+    position:absolute;
+    left:calc(80% - 50%);
+    top: 125px;
+}
+.realisation-1{
+    background-color: green;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    margin-right: -19px;
+}
+.realisation-2{
+    background-color: blue;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+}
+.realisation-3{
+    background-color: blue;
+    width: 300px;
+    height: 150px;
+    margin: 20px;
+    margin-left: -19px;
+}
+.title-realisation{
+    display:inline-block;
+    position:absolute;
+}
+.title-realisation::after{
+    content:'';
+    height:3px;
+    width:43%;
+    background:#252424;
+    position:absolute;
+    left:calc(50% - 50%);
+    bottom:-5px;
+}
+
+/* NOs partenaires*/
+
+.partenaires {
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    padding: 10px;
+    margin: auto;
+    margin-top: 50px;
+    top: 100px;
+}
+.partenaires-box{
+    display: flex;
+    justify-content: center;
+    margin: 90px;
+}
+.title-partenaires{
+    display:inline-block;
+    position:absolute;
+}
+.title-partenaires::after{
+    content:'';
+    height:3px;
+    width:43%;
+    background:#252424;
+    position:absolute;
+    left:calc(50% - 50%);
+    bottom:-5px;
+}
+.partenaires-images{
+    width: 200px;
+    height: 200px;
+}
+
+
+/* header*/
+.header{
+    background-color: #9e9898;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    
+}
+.header div{
+    padding: 20px;
+    margin: 50px;
+}
+.header li{
+    list-style-type: none;
+}
+.header li a{
+    text-decoration: none;
+    color: white;
+}
+.header li a:hover{
+    color: rgb(36, 36, 82);
+}
+.title-header-div{
+    display:inline-block;
+    position:absolute;
+}
+.title-header-div::after{
+    content:'';
+    height:3px;
+    width:43%;
+    background:#252424;
+    position:absolute;
+    left:calc(50% - 50%);
+    bottom:-5px;
+}
+.header-div ul{
+    margin-top: 80px;
 }
