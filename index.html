@@ -38,7 +38,7 @@
 
  //=====Ajout du message au format HTML          
  $contenu = '<p>Bonjour ' . $nom . ',</p><br>
-   	<p>Nous avons bien recu votre message. Nous vous repondrons d\'ici peu <p>';
+   	<p>Nous avons bien recu votre message. Nous vous repondrons d\'ici peu </p>';
 
  mail($mail, 'Accuse de reception', $contenu, $header);
  header('Location: index.php');
