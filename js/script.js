@@ -1,22 +1,29 @@
-$(document).ready(function(){
-    $('#search-user').keyup(function(){
-      $('#result-search').html('');
- 
-      var utilisateur = $(this).val();
- 
-      if(utilisateur != ""){
-        $.ajax({
-          type: 'GET',
-          url: 'fonctions/recherche_utilisateur.php',
-          data: 'user=' + encodeURIComponent(utilisateur),
-          success: function(data){
-            if(data != ""){
-              $('#result-search').append(data);
-            }else{
-              document.getElementById('result-search').innerHTML = "<div style='font-size: 20px; text-align: center; margin-top: 10px'>Aucun utilisateur</div>"
-            }
-          }
-        });
-      }
+// JavaScript source code
+$('.first-name-class').on('input', function() {
+    // do something
+    if(String($('.first-name-class').val()).length > 0){
+        $('#start-fisrt-name').hide();
+        
+    }else{
+        $('#start-fisrt-name').show();
+    }
+});
+    $('.name-class').on('input', function() {
+        // do something
+        if(String($('.name-class').val()).length > 0){
+            $('#start-name').hide();
+            
+        }else{
+            $('#start-name').show();
+        }
     });
-  });
+    
+    $('.mail-class').on('input', function() {
+        // do something
+        if(String($('.mail-class').val()).length > 0){
+            $('#start-mail').hide();
+            
+        }else{
+            $('#start-mail').show();
+        }
+    });    
