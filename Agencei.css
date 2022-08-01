@@ -68,8 +68,8 @@ h6 {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 1rem 6.5rem;
-    background: transparent;
+    padding: 0.3rem 6.5rem;
+    background: white;
     transition: all 0.5s ease;
     z-index: 100000;
 }
@@ -93,7 +93,7 @@ h6 {
             width: 27px;
             height: 3px;
             background-color: #121212;
-            margin: 5px 0;
+            margin: 5px;
             position: relative;
             display: block;
             transition: all 0.3s ease-out 0s;
@@ -101,6 +101,7 @@ h6 {
 
     .nav .menu-bar .menu-items {
         display: flex;
+
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -150,16 +151,122 @@ h6 {
 
 /**********accueil********/
 
-.back {
-    background-image: url("image/agenceicouv.jpeg");
-    width: 100%;
-    height: 120vh;
+.back .overlay {
+    background-image: linear-gradient( rgba(255, 0, 0, 0), #4F47E4), url("image/AgenceiCouv.jpg");
+    min-height: 700px;
+    background-attachment: fixed;
+    background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-    .back .overlay {
-        background-image: linear-gradient(rgba(232,237,255,0.9) 40%, rgba(254,255,244,0.3) 70%, rgba(255,255,255,0.12));
-        width: 100%;
-        height: 100%;
-        opacity: 0.5;
+
+
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    text-align:inherit;
+  }
+
+    .hero-text h3 {
+        color: antiquewhite;
     }
+
+    .hero-text h6 {
+        color: #c9f7f8;
+    }
+
+    .hero-text .header-btn {
+        margin-top: 22px;
+    }
+
+        .hero-text .header-btn li {
+            display: inline-block;
+            margin: 10px 10px 0 0;
+        }
+
+
+            .hero-text .header-btn li a.main-btn {
+                border-radius: 50px;
+                overflow: hidden;
+                background-color: #fff;
+                border: 0;
+                line-height: 50px;
+                box-shadow: 0 3px 6px 0 rgba(0,0,0,0.16);
+            }
+
+
+
+                .hero-text .header-btn li a.main-btn i {
+                    margin-left: 5px;
+                    color: #646EE5;
+                }
+
+        .hero-text .header-btn .btn-one {
+            color: #fff;
+        }
+
+            .hero-text .header-btn .btn-one::before {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to right, #535CF1, #A147E4);
+                z-index: -1;
+                transition: all 0.3s ease;
+                background-position: right center;
+            }
+
+
+            .hero-text .header-btn .btn-one:hover::before {
+                background-image: linear-gradient(to left, #535CF1, #A147E4);
+                background-position: left center;
+            }
+
+
+.divtwo h6 {
+    position:absolute;
+    right: 5%;
+    left:5%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #121212;
+}
+
+#connaitre-container {
+    display: flex;
+    align-items: center;
+    padding: 8vw 8vw 2vw 8vw;
+    justify-content: center;
+}
+
+    #connaitre-container .connaitre-img {
+        width: 60%;
+        padding-left: 200px;
+    }
+
+        #connaitre-container .connaitre-img img {
+            width: 90%;
+        }
+
+
+    #connaitre-container .connaitre-text {
+        width: 50%;
+        padding-right: 200px;
+    }
+
+        #connaitre-container .connaitre-text h3 {
+            color: #293038;
+            padding-bottom: 15px;
+            font-size: 35px;
+        }
+
+        #connaitre-container .connaitre-text p {
+            color: #686F7A;
+            font-weight: 600;
+        }
