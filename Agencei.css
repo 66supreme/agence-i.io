@@ -270,3 +270,107 @@ h6 {
             color: #686F7A;
             font-weight: 600;
         }
+
+
+.but .but-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+
+
+.but-content .box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+
+         .but-content .box .box-one {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+
+             .but-content .box .box-one .buts {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 2rem;
+            }
+
+
+          
+                 .but-content .box .box-one .buts i {
+                    font-size: 2rem;
+                    margin-bottom: 10px;
+                    color: #535CF1;
+                }
+
+                 .but-content .box .box-one .buts .but-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    
+                }
+
+
+
+
+.nos-services {
+    display: block;
+    text-align: center;
+}
+
+.nos-services .table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 7rem;
+    margin-left: 7rem;
+}
+
+    .nos-services .basic {
+        width: 355px;
+        height: 100%;
+        border: 1px solid #535CF1;
+        border-radius: 20px;
+    }
+
+        .nos-services .basic:hover  {
+            background-image: linear-gradient(to right, #535CF1,#A147E4);
+            color: #fff;
+        }
+
+
+        .nos-services .basic h4 {
+            text-align: center;
+            font-weight: 600;
+            padding: 10px 0;
+            font-size: 20px;
+        }
+
+
+        .nos-services .basic .table-containt {
+            display: block;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 16px;
+        }
+
+        .nos-services .basic .but-icon {
+            font-size: 2rem;
+            margin-top: 20px;
+            color: #535CF1;
+        }
