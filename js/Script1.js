@@ -1,5 +1,4 @@
 // JavaScript source code
-/*PART1*/
 $(function () {
     $(document).scroll(function () {
         var $nav = $('.nav');
@@ -23,8 +22,6 @@ menu.onclick = function () {
     }
 }
 
-
-/*PART2*/
 $('.first-name-class').on('input', function () {
     // do something
     if (String($('.first-name-class').val()).length > 0) {
